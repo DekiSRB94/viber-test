@@ -89,6 +89,24 @@ return [
             'driver' => 'errorlog',
             'level' => 'debug',
         ],
+        // logs viberbot
+        'viberbot' => [
+        'driver' => 'daily',
+        'path' => storage_path('logs/viberbot.log'),
+        'level' => 'debug',
+        'days' => 7,
+        'permission' => 0664,
+        ],
+
+        // logs viberbot hook
+        'viberbot_hook' => [
+        'driver' => 'daily',
+        'path' => storage_path('logs/viberbot_hook.log'),
+        'level' => 'debug',
+        'days' => 3,
+        'permission' => 0664,
+        ],
     ],
+
 
 ];

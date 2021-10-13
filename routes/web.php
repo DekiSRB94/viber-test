@@ -16,4 +16,3 @@ Route::get('/', function () {
 });
 
 
-Route::post('viber-webhook', 'AdminController@index')->name('viber-webhook');
